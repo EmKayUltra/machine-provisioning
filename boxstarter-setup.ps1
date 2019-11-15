@@ -75,6 +75,9 @@ New-Item -Path "$env:userprofile\AppData\Local\ChocoCache" -ItemType directory -
 $common = "" # "--cacheLocation `"$env:userprofile\AppData\Local\ChocoCache`""
 choco config set cacheLocation "$env:userprofile\AppData\Local\ChocoCache" 
 
+## langs
+choco install -y nodejs.install
+
 ## browsers
 choco install -y googlechrome $common
 choco install -y firefox $common
