@@ -117,16 +117,18 @@ choco install -y nodejs.install
 choco install -y python2
 
 ## visual studio
-choco install -y visualstudio2017professional $common
+choco install -y netfx-4.6.1-devpack $common
 choco install -y netfx-4.7.2-devpack $common
-choco install -y visualstudio2017-workload-manageddesktop --includeOptional $common
-choco install -y visualstudio2017-workload-netcoretools --includeOptional $common
-choco install -y visualstudio2017-workload-netweb --includeOptional $common
-choco install -y visualstudio2017-workload-webcrossplat --includeOptional $common
-# choco install -y visualstudio2019-workload-manageddesktop --includeOptional $common
-# choco install -y visualstudio2019-workload-netcoretools --includeOptional $common
-# choco install -y visualstudio2019-workload-netweb --includeOptional $common
-# choco install -y visualstudio2019-workload-webcrossplat --includeOptional $common
+# choco install -y visualstudio2017 $common
+# choco install -y visualstudio2017-workload-manageddesktop --includeOptional $common
+# choco install -y visualstudio2017-workload-netcoretools --includeOptional $common
+# choco install -y visualstudio2017-workload-netweb --includeOptional $common
+# choco install -y visualstudio2017-workload-webcrossplat --includeOptional $common
+choco install -y visualstudio2019 $common
+choco install -y visualstudio2019-workload-manageddesktop --includeOptional $common
+choco install -y visualstudio2019-workload-netcoretools --includeOptional $common
+choco install -y visualstudio2019-workload-netweb --includeOptional $common
+choco install -y visualstudio2019-workload-netcrossplat --includeOptional $common
 
 ## sql server
 choco install -y sql-server-management-studio $common
